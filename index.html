@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mathfast</title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+	<h1>Mathfast</h1>
+	<h3>Fácil    -    Dificil</h3>
+	<!-- Contenedor del interruptor -->
+    <div class="switch-container">
+        <!-- El interruptor, al que daremos estilos -->
+        <label class="switch">
+            <!-- input checkbox -->
+            <input
+                type="checkbox"
+                class="switch-input"
+				id="dif"
+            />
+            <!-- Cuerpo del botón -->
+            <span class="slider round"></span>
+		</label>
+		<!--Temporizador-->
+		<div id="timer">
+			<h5>Tiempo</h5>
+			<h6 id="time">00</h6>
+		</div>
+</div>
+	<div class="container">
+
+
+		<div class="izquierdo">
+			<div class="container-operacion">
+			 	<span id="operacion">9 + 9 =</span>
+			 	<span class="resultado" id="resultado"> 18</span>
+			 </div>
+			 
+			 <span class="msj" id="msj">
+			 		
+			 </span>
+		</div>
+		<div class="derecha">
+			<span id="op1" class="opcion" onclick="controlarRespuesta(this)">18</span>
+			<span id="op2" class="opcion" onclick="controlarRespuesta(this)">17</span>
+			<span id="op3" class="opcion" onclick="controlarRespuesta(this)">8</span>
+		</div>
+
+
+	</div>
+	<h2>Correctos: <span id="contadorb">0</span></h2>	
+	<h2>Incorrectos: <span id="contadorm">0</span></h2>
+	
+
+
+	<script src="script.js"></script>
+	
+</body>
+</html>

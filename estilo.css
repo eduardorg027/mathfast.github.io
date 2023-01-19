@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito';
+}
+body{
+	background-image: url("img/fondo.png");
+	text-align: center;	
+}
+h1{
+	color: white;
+	padding: 30px;
+}
+h2{
+	color: white;
+	padding: 10px;
+}
+h3{
+	color: white 
+}
+.container{
+	background: rgb(0,101,121);
+    background: linear-gradient(0deg, rgba(0,101,121,1) 0%, rgba(0,162,144,1) 100%);
+	max-width: 700px;
+	margin: auto;
+	border-radius: 20px;
+	display: flex;
+	padding: 50px 0;
+}
+.izquierdo{
+	width: 70%;
+	font-size: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.derecha{
+	width: 30%;
+}
+.msj{
+	font-size: 40px;
+	height: 50px;
+}
+.derecha{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.opcion{
+	width: 80px;
+	height: 80px;
+	border: 1px solid  #000;
+	font-size: 50px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #000;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.opcion:hover{
+	background-color: #262626;
+}
+
+/* Contenedor del interruptor */
+.switch-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+ 
+/* Botón interruptor */
+.switch {
+    position: relative;
+    bottom: 20px;
+    right: 0;
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    outline: none;
+}
+ 
+/* Ocultamos el checkbox
+ */
+.switch-input{
+    display: none;
+}
+   
+/* Cuerpo del botón*/
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #9f9f9f;
+    transition: background-color .3s ease;
+}
+ 
+/*  Cuerpo del botón cuando está inactivo */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 31px;
+    width: 31px;
+    left: 0;
+    bottom: -5px;
+    box-shadow: 1px 1px 1px #3D3C4F;
+    transition: transform .2s ease;
+}
+ 
+ 
+/*  Background del cuerpo del botón 
+    cuando está activo */
+.switch-input:checked + .slider {
+    background-color: #fd3b3b;
+}
+ 
+/*  botón cuando está activo*/
+.switch-input:checked + .slider::before {
+    transform: translateX(30px);
+}
+   
+  /* Redondeado del cuerpo del botón */
+.round {
+    border-radius: 34px;
+}
+   
+.round::before {
+    border-radius: 50%;
+    background-color: #fff;
+}
+ 
+/*  Color de la cabeza del botón cuando está activo */
+.switch-input:checked + .round::before{
+    background-color: #fd3b3b;
+}
+
+.container header{
+	height: 70px;
+	padding: 0 30px;
+	background: #fff;
+	display: flex;
+	align-items: center;
+}
+#timer{
+	height: 50px;
+	width: 200px;
+	background: rgb(242,233,140);
+    background: radial-gradient(circle, rgba(242,233,140,1) 0%, rgba(252,70,107,1) 100%);
+	border: 1px solid #b0c4d8;
+	font-size: 18px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: row;
+	right: 10px;
+}
+#timer h5{
+	font-size: 22px;
+	display: grid;
+	place-items: center;
+	color: #000;
+	margin: 0 10px;
+}
+#timer #time{
+	height: 40px;
+	width: 70px;
+	background: #0f1400;
+	color: #fff;
+	border: 1px solid #b0c4d8;
+	border-radius: 15px ;
+	margin: 2px 0 0 27px;
+	font-size: 20px;
+}
+
